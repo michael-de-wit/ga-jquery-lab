@@ -18,85 +18,28 @@
         <div class="input-block" id="input-block1">
             <div>
                 <label for="x-coordinate1">Vector 1: X-coordinate</label>
-                <input type="range" id="x-coordinate1" name="x-coordinate1" min="0" max="10" value="1" step="1" />
+                <input type="range" id="x-coordinate1" name="x-coordinate1" min="0" max="200" value="10" step="1" />
             </div>
             <div>
                 <label for="y-coordinate1">Vector 1: Y-coordinate</label>
-                <input type="range" id="y-coordinate1" name="y-coordinate1" min="0" max="10" value="1" step="1" />
+                <input type="range" id="y-coordinate1" name="y-coordinate1" min="0" max="200" value="0" step="1" />
             </div>
         </div>
         <div class="input-block" id="input-block2">
             <div>
                 <label for="x-coordinate1">Vector 2: X-coordinate</label>
-                <input type="range" id="x-coordinate2" name="x-coordinate1" min="0" max="10" value="1" step="1" />
+                <input type="range" id="x-coordinate2" name="x-coordinate1" min="0" max="200" value="0" step="1" />
             </div>
             <div>
                 <label for="y-coordinate2">Vector 2: Y-coordinate</label>
-                <input type="range" id="y-coordinate2" name="y-coordinate1" min="0" max="10" value="1" step="1" />
+                <input type="range" id="y-coordinate2" name="y-coordinate1" min="0" max="200" value="10" step="1" />
             </div>
         </div>
     </form>
-    <div id="container"></div>
-    <script type="module">
-
-        // import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
-
-        $(document).ready(function () {
-
-            $("#data-input-form").change(function () {
-                const x1_val = $("#x-coordinate1").val()
-                const y1_val = $("#y-coordinate1").val()
-                const x2_val = $("#x-coordinate2").val()
-                const y2_val = $("#y-coordinate2").val()
-                console.log(x1_val);
-                console.log(y1_val);
-                console.log(x2_val);
-                console.log(y2_val);
-            })
-
-        })
-
-
-
-
-    //     // Declare the chart dimensions and margins.
-    //     const width = 640;
-    //     const height = 400;
-    //     const marginTop = 20;
-    //     const marginRight = 20;
-    //     const marginBottom = 30;
-    //     const marginLeft = 40;
-
-    //     // Declare the x (horizontal position) scale.
-    //     const x = d3.scaleLinear()
-    //         .domain([0, 10])
-    //         .range([marginLeft, width - marginRight]);
-
-    //     // Declare the y (vertical position) scale.
-    //     const y = d3.scaleLinear()
-    //         .domain([0, 10])
-    //         .range([height - marginBottom, marginTop]);
-
-    //     // Create the SVG container.
-    //     const svg = d3.create("svg")
-    //         .attr("width", width)
-    //         .attr("height", height);
-
-    //     // Add the x-axis.
-    //     svg.append("g")
-    //         .attr("transform", `translate(0,${height - marginBottom})`)
-    //         .call(d3.axisBottom(x));
-
-    //     // Add the y-axis.
-    //     svg.append("g")
-    //         .attr("transform", `translate(${marginLeft},0)`)
-    //         .call(d3.axisLeft(y));
-
-
-    //     // Append the SVG element.
-    //     container.append(svg.node());
-
-    // </script>
+    <svg height="200" width="200" xmlns="http://www.w3.org/2000/svg">
+        <path id="vector1" d="M0 200 L200 0" style="fill:none;stroke:green;stroke-width:3" />
+        <path id="vector2" d="M0 200 L200 100" style="fill:none;stroke:orange;stroke-width:3" />
+    </svg>
 </body>
 
 </html>
