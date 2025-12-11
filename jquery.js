@@ -1,8 +1,3 @@
-$(document).ready(function () {
-    
-    $("button").click(function () {
-        $("h1")
-            .fadeToggle(1000)
-    })
-    
-})
+// import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
+
+
