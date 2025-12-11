@@ -5,10 +5,7 @@ $(document).ready(function () {
         const y1_val = $("#y-coordinate1").val()
         const x2_val = $("#x-coordinate2").val()
         const y2_val = $("#y-coordinate2").val()
-        console.log(x1_val);
-        console.log(y1_val);
-        console.log(x2_val);
-        console.log(y2_val);
+        console.log(x1_val,y1_val,x2_val,y2_val);
 
         const x1_svg_coord = x1_val
         const y1_svg_coord = 200 - y1_val

@@ -4,3 +4,32 @@
     font-family: system-ui, sans-serif;
     margin: 0;
 }
+
+input[type="range"]::-moz-range-track {
+  height: 0.3rem;
+  /* width: 200px; */
+}
+
+input[type="range"]::-moz-range-thumb {
+    border: none; /*Removes extra border that FF applies*/
+    border-radius: 1; /*Removes default border-radius that FF applies*/
+    background-color: black;
+    height: 1rem;
+    width: 0.5rem;
+}
+
+input[id="x-coordinate1"]::-moz-range-track {
+  background: green;
+}
+
+input[id="y-coordinate1"]::-moz-range-track {
+  background: green;
+}
+
+input[id="x-coordinate2"]::-moz-range-track {
+  background: orange;
+}
+
+input[id="y-coordinate2"]::-moz-range-track {
+  background: orange;
+}
